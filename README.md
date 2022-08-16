@@ -62,3 +62,17 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+
+
+
+
+#### Developer Comment
+
+
+- To setup the project when the command 'composer install'
+- put .env file on the root directory also as database name with there crediential.
+- Run the migration for creating table and auto populate the same. "php artisan migrate"
+- Assuming a crone that will make calculation and simultaniously update the cache variable holding the list.
+- On view blade there is the datepicker select the date you will get visitor count with respect there country code.
+- All the visitor counter is fetching for cache.

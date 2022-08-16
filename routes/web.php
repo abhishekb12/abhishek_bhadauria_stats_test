@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 
+use App\Http\Controllers\StatisticsController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -14,5 +16,12 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('welcome1');
 });
+
+
+Route::get('calculate-statistics-command', [StatisticsController::class, 'calculateStatistics'])
+            ->name('calculate.statis');
+            
+Route::get('get-data', [StatisticsController::class, 'retrieveCache'])
+            ->name('retrieve.cache');
